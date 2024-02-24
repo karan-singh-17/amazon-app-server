@@ -7,7 +7,7 @@ const ProductRouter = require('./routes/products.js');
 const userRouter = require('./routes/user.js');
 const PORT = process.env.PORT || 3000;
 const app = express();
-const DB = <Secret MONGO-DB database link> 
+const DB = "mongodb+srv://karanroot:1234567890@cluster0.nkmfsj1.mongodb.net/?retryWrites=true&w=majority"
 app.use(express.json());
 app.use(authRouter);
 app.use(adminRouter);
